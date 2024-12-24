@@ -15,7 +15,7 @@ const LogoWrapper = styled(Link)(
         display: flex;
         text-decoration: none;
         width: 53px;
-        margin: 0 auto;
+        margin: 0 0 0 70%;
         font-weight: ${theme.typography.fontWeightBold};
 `
 );
@@ -99,7 +99,7 @@ function Logo() {
 
   return (
     <TooltipWrapper
-      title="Tokyo Free Black React Typescript Admin Dashboard"
+      title="DigitalSmart (ERP)"
       arrow
     >
       <LogoWrapper to="/overview">
@@ -113,13 +113,11 @@ function Logo() {
           }}
           overlap="circular"
           color="success"
-          badgeContent="2.0"
         >
-          <LogoSignWrapper>
-            <LogoSign>
-              <LogoSignInner />
-            </LogoSign>
-          </LogoSignWrapper>
+         <img
+            src="/logo.png" 
+            alt="Logo"
+         />
         </Badge>
       </LogoWrapper>
     </TooltipWrapper>
